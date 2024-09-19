@@ -9,7 +9,7 @@ featureLength = 20000
 # Score threshold (needed for open set)
 threshold = 0
 # number of k repetitions
-repetitions = 500
+# repetitions = 500
 # minimum size of document
 # (increases precision, but deteriorates recall,
 # if there are many small documents)
@@ -173,14 +173,17 @@ def main():
         description="Tira submission for PPM approach (koppel11)")
     parser.add_argument("-i", action="store", help="path to corpus directory")
     parser.add_argument("-o", action="store", help="path to output directory")
+    parser.add_argument("-r",action="store",help="number of repetitions")
     args = vars(parser.parse_args())
 
     corpusdir = args["i"]
     outputdir = args["o"]
-    if corpusdir == None or outputdir == None:
+    repetitions=args["r"]
+    if corpusdir == None or outputdir == None or repetitions==None:
         parser.print_help()
         return
 
+    repetitions = int(repetitions)
     candidates = jsonhandler.candidates
     unknowns = jsonhandler.unknowns
     jsonhandler.loadJson(corpusdir)
