@@ -3,7 +3,7 @@
     {
       "unknown_text": "unknown00001.txt",
       "author": "candidate00003",
-      "score": 0.9
+      "score": 0.906
     },
     {
       "unknown_text": "unknown00002.txt",
@@ -12,8 +12,8 @@
     },
     {
       "unknown_text": "unknown00003.txt",
-      "author": "candidate00001",
-      "score": 0.6
+      "author": "candidate00003",
+      "score": 0.564
     },
     {
       "unknown_text": "unknown00004.txt",
@@ -23,7 +23,7 @@
     {
       "unknown_text": "unknown00005.txt",
       "author": "candidate00001",
-      "score": 0.9
+      "score": 0.806
     },
     {
       "unknown_text": "unknown00006.txt",
