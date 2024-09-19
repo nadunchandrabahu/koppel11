@@ -9,7 +9,7 @@ featureLength = 20000
 # Score threshold (needed for open set)
 threshold = 0
 # number of k repetitions
-repetitions = 100
+repetitions = 10
 # minimum size of document
 # (increases precision, but deteriorates recall,
 # if there are many small documents)
